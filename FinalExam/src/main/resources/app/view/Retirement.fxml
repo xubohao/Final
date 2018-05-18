@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import java.net.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgApp.controller.RetirementController">
    <bottom>
@@ -28,7 +29,7 @@
    <top>
       <HBox alignment="TOP_CENTER" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Retirement Calculator" />
+            <Label fx:id="Title" text="Retirement Calculator" />
          </children>
       </HBox>
    </top>
@@ -64,7 +65,7 @@
                <children>
                   <Button mnemonicParsing="false" onAction="#btnClear" text="Clear">
                      <HBox.margin>
-                        <Insets left="5.0" right="5.0" />
+                        <Insets left="5.0" right="32.0" />
                      </HBox.margin>
                   </Button>
                   <Button mnemonicParsing="false" onAction="#btnCalculate" text="Calculate" />
@@ -87,4 +88,8 @@
          </children>
       </GridPane>
    </center>
+   
+	<stylesheets>
+		<URL value="@Retirement.css" />
+	</stylesheets>
 </BorderPane>

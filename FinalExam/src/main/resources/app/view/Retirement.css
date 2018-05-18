@@ -1,0 +1,58 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    -fx-background-image: url("bg.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial Narrow";
+    -fx-text-fill: #368;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#ErrorBox {
+	-fx-text-fill: #F00;
+	-fx-font-weight: normal;
+	-fx-font-style: italic;
+}
+
+#Title {
+    -fx-font-size: 32px;
+    -fx-text-fill: #142;
+    -fx-padding: 32px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+#txtSaveEachMonth, #txtWhatYouNeedToSave {
+	-fx-background-color: #8EB, #EFD;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 3 0 ;
+    -fx-background-radius: 0 ;
+    -fx-font-size: 14px;
+	-fx-font-weight: bold;
+    
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background;
+}
+
+.button {
+    -fx-font-size: 16px;
+    -fx-spacing: 32px;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#6CF, #28A);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#28A, #6CF);
+}
